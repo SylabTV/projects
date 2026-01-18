@@ -7,23 +7,33 @@
     color: white;
     font-family: "Syncopate", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     background-color: rgb(39, 39, 39);
 }
-
+h2,h3{
+    text-transform: uppercase;
+}
 
 /* HEADER */
 
 
 header{
-    border-bottom: 1px solid;
+    position: sticky;
+    top: 0;
+    z-index: 9999999999;
+    /* border-bottom: 1px solid; */
     height: 70px;
-    width: 75%;
+    width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    background-color:rgb(39, 39, 39) ;
 }
 header img{
     height: 56px;
@@ -42,6 +52,10 @@ header img{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+}
+.menu a{
+    text-decoration: none;
 }
 .link ul{
     display: flex;
@@ -56,39 +70,63 @@ header img{
 
 
 main{
-    width: 90%;
+    width: 1200px;
     margin: 0 auto;
+    /* border: 1px solid; */
+    padding: 0 35px;
 }
 h1{
     text-transform: uppercase;
     font-family: "Syncopate", sans-serif;
-    font-weight: 400;
     font-style: normal;
-    font-size:5rem;
+    font-weight: 500;
+    font-size:6.4rem;
     text-align: center;
     line-height: 1.5;
 }
 
 /* hero */
-
+section{
+    margin-bottom: 100px;
+}
 .presentation{
+    height: 867px;
+}
+.presentation div{
     display: flex;
     justify-content: space-around;
+
 }
 .presentation p{
     line-height: 1.6;
 }
 .presentation img{
-    width: 300px;
-    margin-top: -70px;
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    object-position:top;
+    margin-top: -90px;
     position: relative;
     right:30px;
+    /* fade  */
+    -webkit-mask-image: linear-gradient(to bottom,
+    rgba(0,0,0,1)65%,
+    rgba(0,0,0,0)100%
+    );
+     mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 65%,
+    rgba(0,0,0,0) 100%
+  );
 }
 .miniabout{
     position: relative;
-    top: 40px;
+    top: 120px;
+    right: 20px;
 }
 .minicompetences{
     position: relative;
-    top:300px;
+    top:270px;
+    text-align:end;
+    left: 20px;
 }
