@@ -1,0 +1,94 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Syncopate", sans-serif;
+}
+body{
+    background-color: rgb(39, 39, 39);
+}
+
+
+/* HEADER */
+
+
+header{
+    border-bottom: 1px solid;
+    height: 70px;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+header img{
+    height: 56px;
+    width: auto;
+}
+.menu ul{
+    display: flex;
+    gap: 1px;
+}
+.menu li{
+    list-style: none;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 25px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link ul{
+    display: flex;
+    gap:10px;
+}
+.link li{
+    list-style: none;
+}
+
+
+/* MAIN  */
+
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+h1{
+    text-transform: uppercase;
+    font-family: "Syncopate", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:5rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* hero */
+
+.presentation{
+    display: flex;
+    justify-content: space-around;
+}
+.presentation p{
+    line-height: 1.6;
+}
+.presentation img{
+    width: 300px;
+    margin-top: -70px;
+    position: relative;
+    right:30px;
+}
+.miniabout{
+    position: relative;
+    top: 40px;
+}
+.minicompetences{
+    position: relative;
+    top:300px;
+}
